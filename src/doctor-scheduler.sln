@@ -1,10 +1,58 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2AFAD975-6DB0-4D3E-8C1A-130E4A59B847}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DoctorScheduler.Tests.Helpers", "DoctorScheduler.Tests.Helpers\DoctorScheduler.Tests.Helpers.fsproj", "{66FEC3F9-10EA-4DD7-8D17-53CD93581D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorScheduler.Application", "DoctorScheduler.Application\DoctorScheduler.Application.csproj", "{E1ACB366-BB94-455E-9DFD-00D08F2E0568}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DoctorScheduler.Application.Tests", "DoctorScheduler.Application.Tests\DoctorScheduler.Application.Tests.fsproj", "{D09A7AEE-4F6F-4E0D-9010-64660BEBA724}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DoctorScheduler.Service", "DoctorScheduler.Service\DoctorScheduler.Service.fsproj", "{1B12D0C3-F4A0-4B6F-95F2-0A5016700CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorScheduler.Storage", "DoctorScheduler.Storage\DoctorScheduler.Storage.csproj", "{D79415AE-BB08-463E-A690-24796AC236AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorScheduler.Domain", "DoctorScheduler.Domain\DoctorScheduler.Domain.csproj", "{9F74752F-79EE-48C5-B6CB-52D056A5E622}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DoctorScheduler.Notification", "DoctorScheduler.Notification\DoctorScheduler.Notification.fsproj", "{CB573422-9631-4871-96A8-F2CD619E8E7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66FEC3F9-10EA-4DD7-8D17-53CD93581D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66FEC3F9-10EA-4DD7-8D17-53CD93581D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66FEC3F9-10EA-4DD7-8D17-53CD93581D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66FEC3F9-10EA-4DD7-8D17-53CD93581D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1ACB366-BB94-455E-9DFD-00D08F2E0568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1ACB366-BB94-455E-9DFD-00D08F2E0568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1ACB366-BB94-455E-9DFD-00D08F2E0568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1ACB366-BB94-455E-9DFD-00D08F2E0568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09A7AEE-4F6F-4E0D-9010-64660BEBA724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09A7AEE-4F6F-4E0D-9010-64660BEBA724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09A7AEE-4F6F-4E0D-9010-64660BEBA724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09A7AEE-4F6F-4E0D-9010-64660BEBA724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B12D0C3-F4A0-4B6F-95F2-0A5016700CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B12D0C3-F4A0-4B6F-95F2-0A5016700CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B12D0C3-F4A0-4B6F-95F2-0A5016700CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B12D0C3-F4A0-4B6F-95F2-0A5016700CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79415AE-BB08-463E-A690-24796AC236AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79415AE-BB08-463E-A690-24796AC236AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79415AE-BB08-463E-A690-24796AC236AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79415AE-BB08-463E-A690-24796AC236AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F74752F-79EE-48C5-B6CB-52D056A5E622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F74752F-79EE-48C5-B6CB-52D056A5E622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F74752F-79EE-48C5-B6CB-52D056A5E622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F74752F-79EE-48C5-B6CB-52D056A5E622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB573422-9631-4871-96A8-F2CD619E8E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB573422-9631-4871-96A8-F2CD619E8E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB573422-9631-4871-96A8-F2CD619E8E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB573422-9631-4871-96A8-F2CD619E8E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66FEC3F9-10EA-4DD7-8D17-53CD93581D71} = {2AFAD975-6DB0-4D3E-8C1A-130E4A59B847}
+		{D09A7AEE-4F6F-4E0D-9010-64660BEBA724} = {2AFAD975-6DB0-4D3E-8C1A-130E4A59B847}
 	EndGlobalSection
 EndGlobal
